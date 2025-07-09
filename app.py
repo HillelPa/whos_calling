@@ -13,7 +13,7 @@ to_number = os.getenv("TO_NUMBER")
 
 client = Client(account_sid, auth_token)
 
-url = 'https://handler.twilio.com/twiml/EH98abfcfd303725536f7d2dd3ab5882fa'
+url = os.getenv("BELLA")
 
 call = client.calls.create(
     to=to_number,
